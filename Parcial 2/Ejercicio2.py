@@ -44,9 +44,9 @@ class Linea:
         for cabina in self.cabinas:
             for persona in cabina.personasAbordo:
                 if persona.edad < 25 or persona.edad > 60:
-                    total += 1.5        # TAR PREFERENCIAL
+                    total += 1.5    # TAR PREFERENCIAL
                 else:
-                    total += 3          # TAR REGULAR
+                    total += 3    # TAR REGULAR
         return total
 
 class MiTeleferico:
@@ -81,3 +81,4 @@ class MiTeleferico:
         
         mayor = ingresos_por_linea[0]
         return mayor
+
